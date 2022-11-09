@@ -53,6 +53,53 @@ a{
 }
 
 @media(min-width:250px){
+    /* nav */
+
+    nav >ul{
+        display: none;
+    }
+
+    nav aside{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--darkerblack);
+        color: white;
+        align-items: center;
+    }
+
+    nav h2{
+        padding-left: 5vh;
+    }
+
+    details{
+        position: absolute;
+        width: 95%;
+        padding-right: 5%;
+        text-align: right;
+    }
+
+    details ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--darkerblack);
+    }
+
+    details li{
+        display: flex;
+    }
+
+    details a{
+        color: white;
+        padding: 3%;
+        width: 100%;
+    }
+
+    summary{
+        font-size: 24px;
+    }
+
     /* header */
     header{
         background-image: url(/img/pexels-cottonbro-studio-5054532.jpg);
@@ -70,7 +117,7 @@ a{
       /* main */
 
       main{
-        row-gap: ;
+        row-gap: 5vh;
     }
 
     /* features */
@@ -95,7 +142,7 @@ a{
         flex-direction: column;
         row-gap: 10vh;
         padding-top: 5vh;
-        padd
+        padding-bottom: 5vh;
     }
 
     .features a{
@@ -111,13 +158,11 @@ a{
     .features h3{
         width: 40%;
         text-align: center;
-
     }
 
     .features p{
         color: var(--darkergray);
         font-weight: 500;
-
     }
 
 
