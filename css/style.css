@@ -1,320 +1,320 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800&display=swap&#39;');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Franklin', sans-serif;
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Libre Franklin', sans-serif;
 }
 
-:root{
-    --defaultcolor: #55A2A6;
-    --defaultblack: #151515;
-    --lighblack: #333333;
-    --darkerblack: #111111;
-    --lightblack2:#444444;
-    --defaultgray:#CCC;
-    --darkergray: #B2B2B2;
+:root {
+   --defaultColor : #55A2A6;
+   --defaultBlack : #151515;
+   --lightBlack   : #333333;
+   --darkerBlack  : #111111;
+   --lightBlack2  : #444444;
+   --defaultGray  : #CCC;
+   --darkerGray   : #B2B2B2;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+   scroll-behavior: smooth;
 }
 
-body, 
+body,
+nav,
 main,
-nav, 
-footer, 
+footer,
 main > section,
-.about > blockquote,
 .features a,
-.about > section> article{
-    display: flex;
-    flex-direction: column;
+.about > blockquote,
+.about > section > article {
+   display: flex;
+   flex-direction: column;
 }
 
-h1, h3{
-    text-transform: capitalize;
+h1 {
+   color: var(--darkerBlack);
 }
 
-h1{
-    color: var(--darkerblack);
+h1, h3 {
+   text-transform: capitalize;
 }
 
-h2{
-    color: white;
-    text-transform: uppercase;
+h2 {
+   color: white;
+   text-transform: uppercase;
 }
 
-h3{
-    color: var(--lighblackblack2);
+h3 {
+   color: var(--lightBlack2);
 }
 
-a{
-    text-decoration: none;
+a {
+   text-decoration: none;
 }
 
-@media(min-width:250px){
-    /* nav */
+@media (min-width: 250px) {
 
-    nav >ul{
-        display: none;
-    }
+   /* NAVIGATION */
+   nav > ul {
+      display: none;
+   }
 
-    nav aside{
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--darkerblack);
-        color: white;
-        align-items: center;
-        padding-top: 2vh;
-        padding-right: 2vh;
-    }
+   nav aside {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--darkerBlack);
+      color: white;
+      align-items: center;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+   }
 
-    nav h2{
-        padding-left: 5vh;
-    }
+   nav h2 {
+      padding-left: 5vh;
+   }
 
-    details{
-        position: absolute;
-        width: 95%;
-        padding-right: 5%;
-        text-align: right;
-    }
+   details {
+      position: absolute;
+      padding-right: 5%;
+      width: 95%;
+      text-align: right;
+   }
 
-    details ul{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: var(--darkerblack);
-    }
+   details ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: var(--darkerBlack);
+   }
 
-    details li{
-        display: flex;
-    }
+   details li {
+      display: flex;
+      padding-right: 3%;
+   }
 
-    details a{
-        color: white;
-        padding: 3%;
-        width: 100%;
-    }
+   details a {
+      color: white;
+      padding: 3%;
+      width: 100%;
+   }
 
-    summary{
-        font-size: 24px;
-    }
+   summary {
+      font-size: 24px;
+   }
+   /* NAVIGATION END */
 
-    /* header */
-    header{
-        background-image: url(/img/pexels-cottonbro-studio-5054532.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 40vh;
-    }
+   header {
+      background-image: url("/img/bg-header.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 40vh;
+   }
 
-    header article{
-        background-color: rgba(50,50,50,.4);
-        height: 100%;
-        width: 100%;
-    }
-      /* main */
+   header > article {
+      background-color: rgba(50,50,50,.4);
+      height: 100%;
+      width: 100%;
+   }
 
-      main{
-        row-gap: 5vh;
-    }
+   main {
+      row-gap: 5vh;
+   }
 
-    /* features */
+   /* FOOTER */
+   footer {
+      border-top: 5px solid var(--defaultColor);
+      background-color: var(--defaultBlack);
+      row-gap: 5vh;
+   }
 
-    .features blockquote{
-        color: white;
-        padding: 4%;
-        text-align: center;
-        padding-left: 20%;
-        padding-right: 20%;
-        line-height: 1.5;
-        background-color: var(--defaultcolor);
-    }
+   footer > article,
+   footer aside,
+   footer section,
+   footer > article > article {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4vh;
+   }
 
-    .features q,
-    .features cite{
-        width: 80%;
-    }
+   footer > section,
+   footer > article {
+      padding: 5%;
+   }
 
-    .features > article{
-        display: flex;
-        flex-direction: column;
-        row-gap: 10vh;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-    }
+   footer section > aside {
+      flex-direction: row;
+      column-gap: 2vh;
+   }
 
-    .features a{
-        align-items: center;
-        row-gap: 2vh;
-        color: var(--darkerblack);
-    }
+   aside > form {
+      padding: 2%;
+      display: flex;
+   }
 
-    .features i{
-        font-size: 48px;
-        padding-right: 3%;
-    }
+   input {
+      padding: 2%;
+      border: none;
+      background-color: var(--lightBlack2);
+   }
 
-    .features h3{
-        width: 40%;
-        text-align: center;
-    }
+   [type="email"] {
+      background-color: var(--lightBlack);
+   }
 
-    .features p{
-        color: var(--darkergray);
-        font-weight: 500;
-    }
+   input,
+   input::placeholder {
+      color: var(--defaultGray);
+   }
 
-    /* about */
+   footer > section {
+      border-top: 1px solid var(--lightBlack2);
+      background-color: var(--darkerBlack);
+   }
 
-    .about{
-        padding: 5%;
-        row-gap: 5vh;
-    }
+   footer span {
+      color: white;
+   }
 
-    .about > article{
-        display: flex;
-        align-items: center;
-        column-gap: 1vh;
-    }
+   footer a {
+      border: 2px solid var(--defaultGray);
+      border-radius: 50%;
+      font-size: 18px;
+      color: var(--defaultGray);
+      height: 4vh;
+      width: 4vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
 
-    .about aside{
-        display: flex;
-        border: 2px solid var(--defaultgray);
-        width: 30%;
-        height: 1vh;
-        background-color: var(--defaultgray);
-    }
+   footer h3 {
+      text-transform: uppercase;
+      color: var(--defaultGray);
+   }
 
-    .about section{
-        display: flex;
-        flex-direction: column;
-        row-gap: 3vh;
-    }
+   footer p {
+      color: var(--darkerGray);
+   }
+   /* FOOTER END */
 
-    .about section article{
-        row-gap: 3vh;
-    }
+   /* FEATURES SECTION */
+   .features {
+      row-gap: 5vh;
+   }
 
-    .about p{
-        line-height: 1.5;
-        color: var(--defaultgray);
-        font-size: 12px;
-    }
+   .features blockquote{
+      line-height: 1.5;
+      color: white;
+      background-color: var(--defaultColor);
+      padding: 4%;
+      padding-left: 20%;
+      padding-right: 20%;
+      text-align: center;
+   }
 
-    .about a{
-        width: 30%;
-        background-color: var(--defaultcolor);
-        text-align: center;
-        color: whitesmoke;
-        padding: 1%;
-    }
+   .features q,
+   .features cite {
+      width: 80%;
+   }
 
-    .about blockquote{
-        border-left: 10px solid var(--defaultcolor);
-        padding: 3%;
-        row-gap: 3vh;
-    }
+   .features > article {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10vh;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+   }
 
-    .about q{
-        padding-left:5%;
-        line-height: 1.5;
-        font-style: italic;
-        font-size: 12px;
-        color: var(--lightblack2);
-    }
+   .features a {
+      color: var(--darkerBlack);
+      align-items: center;
+      row-gap: 2vh;
+   }
 
-    .about cite{
-        color: var(--defaultcolor);
-        text-transform: uppercase;
-        padding-left: 5%;
-    }
+   .features i {
+      font-size: 48px;
+   }
 
-    /* footer */
-    footer{
-        background-color: var(--defaultblack);
-        row-gap: 5vh;
-        padding: 5%;
-        border-top: 5px solid lightskyblue;
-    }
+   .features h3 {
+      width: 40%;
+      text-align: center;
+   }
 
-    footer > section,
-    footer > article{
+   .features p {
+      color: var(--darkerGray);
+      font-weight: 500;
+   }
+   /* FEATURES SECTION END */
 
-    }
+   /* ABOUT */
+   .about {
+      padding: 5%;
+      row-gap: 5vh;
+   }
 
-    footer section,
-    footer aside,
-    footer > article > article,
-    footer> article {
-        display: flex;
-        flex-direction: column;
-        row-gap: 4vh;
-    }
+   .about > article {
+      display: flex;
+      column-gap: 1vh;
+      align-items: center;
+   }
 
-    footer section > aside{
-        column-gap: 2vh;
-        flex-direction: row;
-    }
+   .about aside {
+      display: flex;
+      width: 30%;
+      border: 2px solid var(--defaultGray);
+      height: 1vh;
+      background-color: var(--defaultGray);
+   }
 
-    aside > form{
-        padding: 2%;
-        display: flex;
-    }
+   .about section {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3vh;
+   }
 
-    input{
-        padding: 2%;
-        border: none;
-        background-color: var(--lightblack2);
-    }
+   .about section article {
+      row-gap: 3vh;
+   }
 
-    input,
-    input::placeholder{
-        color: var(--defaultgray);
-    }
-  
-    [type="email"]{
-        background-color: var(--lighblack);
-    }
+   .about p {
+      line-height: 1.5;
+      color: var(--lightBlack2);
+      font-size: 12px;
+   }
 
-    footer a{
-        font-size: 18px;
-        color: var(--defaultgray);
-        border-radius: 50%;
-        border: 2px solid var(--defaultgray);
-        height: 4vh;
-        width: 4vh;
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-    }
+   .about a {
+      width: 30%;
+      background-color: var(--defaultColor);
+      text-align: center;
+      color: whitesmoke;
+      padding: 1%;
+   }
 
-    footer h3{
-        text-transform: uppercase;
-        color: var(--defaultgray);
-    }
+   .about blockquote {
+      border-left: 10px solid var(--defaultColor);
+      padding: 3%;
+      row-gap: 3vh;
+   }
 
-    footer p{
-        color: var(--darkergray);
-    }
+   .about q {
+      padding-left: 5%;
+      line-height: 1.5;
+      font-style: italic;
+      font-size: 12px;
+      color: var(--lightBlack2);
+   }
 
-    footer > section{
-        background-color: var(--darkerblack);
-        border-top: 1px solid var(--lighblack);
-    }
+   .about cite {
+      color: var(--defaultColor);
+      text-transform: uppercase;
+      padding-left: 5%;
+   }
+   /* ABOUT END */
+}
 
-    footer span{
-        color: white;
-    }
-
-
-
-
-
-
+@media(min-width:700px){
 
 }
 
