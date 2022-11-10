@@ -365,7 +365,6 @@ a {
       padding-left: 10%;
       padding-right: 10%;
       width: 80%;
-
    }
 
    .features > article{
@@ -484,6 +483,47 @@ a {
       align-items: center;
    }
 
-   
+   /* features */
+   .features blockquote{
+      padding-top: 2%;
+      padding-bottom: 2%;
+   }
+
+   .features article{
+      width: 70%;
+   }
+
+   .features a{
+      padding: 2%;
+      height: 30vh;
+      justify-content: space-evenly;
+   }
+
+   .features a:hover{
+      background-color: var(--darkerBlack);
+   }
+
+   .features a:hover i{
+      color: white;
+   }
+
+   .features a:hover h3{
+      color: var(--defaultColor);
+   }
+
+   .features a:hover p{
+      color: var(--defaultGray);
+   }
+
+   .features{
+      row-gap: 0;
+      padding-top: 2vh;
+   }
+
+   .features i{
+      font-size: 60px;
+   }
+
+
 }
 
