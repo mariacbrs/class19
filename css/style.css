@@ -406,7 +406,46 @@ a {
       font-size: 16px;
    }
 
+   /* footer */
+   footer,
+   footer> article>article,
+   footer> article>section{
+      row-gap: 2vh;
+   }
 
+   footer > section {
+      padding: 2%;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   
+   footer > article{
+      padding-bottom: 2vh;
+
+   }
+
+   footer> article>section{
+      column-gap: 0.5vh;
+   }
+
+   footer a{
+      width: 3vh;
+      height: 3vh;
+
+   }
+
+   footer aside{
+      row-gap: 1vh;
+
+   }
+
+   footer h3{
+      font-size: 20px;
+   }
+
+   form{
+      justify-content: flex-end;
+   }
 
 
 }
