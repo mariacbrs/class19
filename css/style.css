@@ -105,7 +105,7 @@ a {
    /* NAVIGATION END */
 
    header {
-      background-image: url("/img/bg-header.jpg");
+      background-image: url("/img/pexels-cottonbro-studio-5054532.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -314,7 +314,69 @@ a {
    /* ABOUT END */
 }
 
-@media(min-width:700px){
+@media(min-width:600px){
+   /* nav */
+
+   nav > aside{
+        display: none;
+   }
+    
+   nav{
+        row-gap: 1vh;
+   }
+
+   nav ul{
+        display: flex;
+   }
+
+   /*header */
+   
+   header{
+      height: 45vh;
+   }
+
+   /* about */
+
+   .about{
+      padding-left: 1%;
+      padding-right: 1%;
+   }
+
+   .about section{
+      justify-content: space-between;
+      flex-direction: row;
+      column-gap: 2vh;
+   }
+
+   .about > aside{
+      width: 40%;
+   }
+
+   .about > article{
+      justify-content: space-between;
+   }
+
+   .about p{
+      font-size: 16px;
+   }
+
+   .about a{
+      padding: 2%;
+      width: 45%;
+   }
+
+   .about blockquote,
+   .about q,
+   .about cite{
+      padding-left: 1%;
+   }
+
+   .about q{
+      font-size: 16px;
+   }
+
+
+
 
 }
 
