@@ -105,7 +105,7 @@ a {
    /* NAVIGATION END */
 
    header {
-      background-image: url("/img/pexels-cottonbro-studio-5054532.jpg");
+      background-image: url("/img/bg-header.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -314,120 +314,46 @@ a {
    /* ABOUT END */
 }
 
-@media(min-width:600px){
-   /* nav */
-   
-   nav{
+/* TABLET VERSION */
+@media (min-width: 600px) {
+   header {
+      height: 45vh;
+   }
+
+   /* NAVIGATION TABLET */
+   nav {
       padding: 3%;
       flex-direction: row;
       justify-content: space-between;
    }
 
-   nav > ul{
-      width: 65%;
-      justify-content: space-evenly;
-      display: flex;
+   nav > ul {
       padding-top: 20px;
+      width: 65%;
+      display: flex;
+      justify-content: space-evenly;
    }
 
-   nav > aside{
+   nav > aside {
       display: none;
    }
 
-   nav li{
+   nav li {
       list-style-type: none;
    }
-   
-   nav a{
+
+   nav a {
       color: var(--lightBlack);
    }
-
-   h1{
+   
+   h1 {
       font-size: 28px;
    }
-   
+   /* NAVIGATION TABLET END */
 
-
-   /*header */
-   
-   header{
-      height: 45vh;
-   }
-
-   /* features */
-
-   .features {
-      align-items: center;
-      padding-top: 1vh;
-   }
-
-   .features > blockquote{
-      padding-left: 10%;
-      padding-right: 10%;
-      width: 80%;
-   }
-
-   .features > article{
-      flex-direction: row;
-      width: 96%;
-      justify-content: space-between;
-      padding:0;
-   }
-
-   .features a{
-      width: 24%;
-      text-align: center;
-   }
-
-   .features h3{
-      width: 70%;
-   }
-
-   /* about */
-
-   .about{
-      padding-left: 1%;
-      padding-right: 1%;
-   }
-
-   .about section{
-      justify-content: space-between;
-      flex-direction: row;
-      column-gap: 2vh;
-   }
-
-   .about > aside{
-      width: 40%;
-   }
-
-   .about > article{
-      justify-content: space-between;
-   }
-
-   .about p{
-      font-size: 16px;
-   }
-
-   .about a{
-      padding: 2%;
-      width: 45%;
-   }
-
-   .about blockquote,
-   .about q,
-   .about cite{
-      padding-left: 1%;
-   }
-
-   .about q{
-      font-size: 16px;
-   }
-
-   /* footer */
-   footer,
-   footer> article>article,
-   footer> article>section{
-      row-gap: 2vh;
+   /* FOOTER TABLET */
+   footer > article {
+      padding-bottom: 2vh;
    }
 
    footer > section {
@@ -435,95 +361,192 @@ a {
       flex-direction: row;
       justify-content: space-between;
    }
-   
-   footer > article{
-      padding-bottom: 2vh;
 
+   footer,
+   footer > article > section,
+   footer > article > article {
+      row-gap: 2vh;
    }
 
-   footer> article>section{
+   footer > article > section {
       column-gap: 0.5vh;
    }
 
-   footer a{
+   footer a {
       width: 3vh;
       height: 3vh;
-
    }
 
-   footer aside{
+   footer aside {
       row-gap: 1vh;
-
    }
 
-   footer h3{
+   footer h3 {
       font-size: 20px;
    }
 
-   form{
+   form {
       justify-content: flex-end;
    }
 
+   /* FOOTER TABLET END */
 
-}
-
-@media(min-width:1000px){
-   header{
-      height: 60vh;
-   }
-
-   /* nav */
-   nav{
-      justify-content: space-evenly;
-   }
-
-   nav > ul{
-      width: 40%;
-      padding-top: 0;
+   /* FEATURES TABLET */
+   .features {
+      padding-top: 1vh;
       align-items: center;
    }
 
-   /* features */
+   .features > blockquote {
+      width: 80%;
+      padding-left: 10%;
+      padding-right: 10%;
+   }
+
+   .features > article {
+      width: 96%;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0;
+   }
+
+   .features a {
+      width: 24%;
+      text-align: center;
+   }
+
+   .features h3 {
+      width: 70%;
+   }
+   /* FEATURES TABLET END */
+
+   /* ABOUT TABLET */
+    .about {
+      padding-left: 2%;
+      padding-right: 2%;
+   }
+
+   .about aside {
+      width: 40%;
+   }
+
+   .about > article {
+      width: 100%;
+      justify-content: space-between;
+   }
+
+   .about section {
+      justify-content: space-between;
+      flex-direction: row;
+      column-gap: 2vh;
+   }
+
+   .about p {
+      font-size: 16px
+   }
+
+   .about a {
+      padding: 2%;
+      width: 45%;
+   }
+
+   .about blockquote,
+   .about q,
+   .about cite {
+      padding-left: 1%;
+   }
+
+   .about q {
+      font-size: 16px;
+   }
+   /* ABOUT TABLET END */
+
+}
+/* TABLET VERSION END */
+
+/* DESKTOP VERSION */
+@media (min-width: 1000px) {
+
+   main {
+      row-gap: 1vh;
+   }
+
+   header {
+      height: 60vh;
+   }
+
+   /* NAVIGATION DESKTOP */
+   nav {
+      justify-content: space-evenly;
+   }
+
+   nav > ul {
+      padding-top: 0;
+      width: 40%;
+      align-items: center;
+   }
+   /* NAVIGATION DESKTOP END */
+
+   /* FEATURES DESKTOP */
+   .features {
+      padding-top: 2vh;
+      row-gap: 0;
+   }
+
    .features blockquote{
       padding-top: 2%;
       padding-bottom: 2%;
    }
 
-   .features article{
+   .features article {
       width: 70%;
    }
 
-   .features a{
-      padding: 2%;
-      height: 30vh;
-      justify-content: space-evenly;
-   }
-
-   .features a:hover{
-      background-color: var(--darkerBlack);
-   }
-
-   .features a:hover i{
-      color: white;
-   }
-
-   .features a:hover h3{
-      color: var(--defaultColor);
-   }
-
-   .features a:hover p{
-      color: var(--defaultGray);
-   }
-
-   .features{
-      row-gap: 0;
-      padding-top: 2vh;
-   }
-
-   .features i{
+   .features i {
       font-size: 60px;
    }
 
+   .features a {
+      justify-content: space-evenly;
+      padding: 2%;
+      height: 30vh;
+   }
 
+   .features a:hover {
+      background-color: var(--darkerBlack);
+      transition: .3s;
+   }
+
+   .features a:hover > i {
+      color: white;
+   }
+
+   .features a:hover > h3 {
+      color: var(--defaultColor);
+   }
+
+   .features a:hover > p {
+      color: var(--defaultGray);
+   }
+   /* FEATURES DESKTOP END */
+
+   /* ABOUT DESKTOP */
+   .about {
+      padding-top: 2vh;
+      align-items: center;
+   }
+
+   .about > article,
+   .about > section {
+      width: 80%;
+   }
+
+   .about > blockquote {
+      /* padding-left: 0;
+      width: 78%; */
+      width: 80%;
+      box-sizing: border-box;
+   }
+   /* ABOUT DESKTOP END */
 }
-
+/* DESKTOP VERSION END */
