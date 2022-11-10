@@ -316,18 +316,37 @@ a {
 
 @media(min-width:600px){
    /* nav */
+   
+   nav{
+      padding: 3%;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   nav > ul{
+      width: 65%;
+      justify-content: space-evenly;
+      display: flex;
+      padding-top: 20px;
+   }
 
    nav > aside{
-        display: none;
-   }
-    
-   nav{
-        row-gap: 1vh;
+      display: none;
    }
 
-   nav ul{
-        display: flex;
+   nav li{
+      list-style-type: none;
    }
+   
+   nav a{
+      color: var(--lightBlack);
+   }
+
+   h1{
+      font-size: 28px;
+   }
+   
+
 
    /*header */
    
