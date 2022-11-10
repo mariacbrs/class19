@@ -548,5 +548,27 @@ a {
       box-sizing: border-box;
    }
    /* ABOUT DESKTOP END */
+
+   /* footer */
+
+   footer > article{
+      flex-direction: row;
+      justify-content: space-between;
+      width: 75%;
+      padding: 2%;
+   }
+   
+   footer{
+      align-items: center;
+   }
+
+   footer > section{
+      width: 76%;
+      padding-left: 12%;
+      padding-right: 12%;
+      justify-content: space-between;
+   }
+
+
 }
 /* DESKTOP VERSION END */
